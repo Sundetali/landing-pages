@@ -1,0 +1,212 @@
+body, html {
+	font-size: 16px;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #D9CF1A;
+}
+ul, li{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+img {
+	max-width: 100%;
+}
+a {
+	text-decoration-line: none;
+	transition: color .7s ease;
+}
+body {
+	background: rgb(237, 165, 166);
+	background-image: url('./img/t.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top center;
+	background-size: cover;
+	height: 100vh;
+}
+header {
+	height: 650px;
+	position: relative;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul.img-list {
+	margin: 10px 0 15px ;
+}
+nav ul.img-list li {
+	margin-left: 7px;
+}
+nav ul.nav-list li {
+	border-right: 1px solid #D9CF1A;
+	
+	padding: 0 30px;
+	font-size: 1.8rem;
+}
+
+nav ul.nav-list li:last-child {
+	border: none;
+}
+header a.down {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+}
+
+.section-1, 
+.section-3,
+.section-5{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    border-top: 0px solid rgba(0, 0, 0, 1);
+    border-bottom: 0px solid rgba(0, 0, 0, 1);
+	padding: 80px 0;
+}
+
+.section-1 h3 {
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	margin-bottom: 50px;
+}
+.section-1 h3 {
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+}
+
+.section-1 p {
+	font-weight: 700;
+	line-height: 2rem;
+}
+.audio-section {
+	margin: 100px 0;
+	border-top: 8px solid #fff;
+	border-right: 8px solid #fff;
+}
+.audio-section-in {
+	border: 5px solid #000;
+	background-color: #CC1013;
+	padding: 20px;
+}
+.audio-section-in .nav-audio {
+	margin-bottom: 20px;
+}
+
+.audio-section-in .nav-audio a:hover {
+	color: #D9CF1A;
+	text-decoration: none;
+}
+.audio-section-in a {
+	color : #AB0D10;
+}
+.audio-section-in img {
+	margin-bottom: 20px;
+}
+.audio-section-in h3,
+.audio-section-in p {
+	text-align: center;
+	color: #7B090B;
+	margin-bottom: 20px;
+}
+.audio-section-in audio {
+	display: block;
+	margin: 0 auto 20px;
+}
+.audio-section-in audio ul  {
+	margin: 0 20px;
+}
+.audio-section-in ul#playlist li {
+	border-top: 1px solid #DD7779;
+	padding: 10px 20px;
+	color: #000;
+}
+
+.audio-section-in ul#playlist li a {
+	color: rgba(0,0,0, 0.7);
+}
+
+.audio-section-in ul#playlist li a:hover {
+	color: #D9CF1A;
+	text-decoration: none;
+}
+.audio-section-in img {
+	display: block;
+	margin: 0 auto;
+}
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+.section-4 {
+	padding: 100px 0;
+}
+
+.section-4 .img-wrapper {
+	position: relative;
+	margin-bottom: 30px;
+}
+.section-4 .img-wrapper div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity .6s ease;
+}
+
+.section-4 .img-wrapper div:hover {
+	background: #000;
+	opacity: .5;
+	cursor: pointer;
+}
+.section-4 .img-wrapper img {
+	width: 100%;
+}
+
+
+.section-5{
+	padding-bottom: 12rem;
+}
+.section-5 h1 {
+	margin-bottom: 6.25rem;
+}
+.section-5 ul {
+	margin-bottom: 3.125rem;
+}
+.section-5 h1 {
+	font-size: 4.5rem;
+}
+.section-5 span {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 3rem;
+}
+.section-5 a {
+	color: #D9CF1A;
+	font-size: 1.2rem;
+	letter-spacing: 2px;
+}
+footer {
+	padding: 30px 0;
+	background: #000;
+}
+footer p {
+	font-size: 0.7		rem;
+	font-weight: bold;
+}
+@media (max-width: 767.98px) { 
+		body, html {
+			font-size: 10px;
+		}
+		nav.navbar ul.nav-list li {
+			padding: 0 10px;
+		}
+		.section-1 p {
+			font-size: 1.2rem;
+		}
+		.section-5 {
+			padding-bottom: 100px;
+		}
+}
+

@@ -1,0 +1,280 @@
+ @font-face {
+    font-family: MyriadProRegular; /* Имя шрифта */
+    src: url(../libs/fonts/8143.ttf); /* Путь к файлу со шрифтом */
+   }
+body, html {
+	font-family: MyriadProRegular, HelveticaRegular, Arial, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration-line: none;
+}
+ul {
+	list-style-type: none;
+}
+img {
+	max-width: 100%;
+}
+.nav {
+	width: 100%;
+	margin-top: 20px;
+}
+.right-nav ul{
+	margin-top: 8px;
+	font-size: .7rem;
+    color: #696969;
+    line-height: .8rem;
+    text-align: right;
+}
+.article-1 {
+	padding: 7.14rem 0;
+}
+.article-1 h2 {
+	font-size: 2.5rem;
+    margin-bottom: 0;
+    line-height: 2.785rem;
+    font-weight: 600;
+}
+.article-1 #pencil-2 {
+    position: absolute;
+    right: 138px;
+}
+.article-1 h2.visibility, 
+.article-1 img.vis {
+	position: absolute;
+	-webkit-animation: hiddenprocess 2s 1s forwards;
+	-moz-animation:    hiddenprocess 2s 1s forwards;
+	-o-animation:      hiddenprocess 2s 1s forwards;
+	animation:         hiddenprocess 2s 1s forwards;
+}
+.article-1 h2.visibility-none, 
+.article-1 img.vis-none{
+	opacity: 0;
+	-webkit-animation: animation-title 2s 3s forwards;
+	-moz-animation:    animation-title 2s 3s forwards;
+	-o-animation:      animation-title 2s 3s forwards;
+	animation:         animation-title 2s 3s forwards;
+}
+.article-1 h2.visibility {
+	font-size: 3.8rem !important;
+	top: 0;
+	left: 39%;
+	opacity: 1;
+}
+
+.article-1 img.vis{
+	left: 18%;
+	opacity: 1;
+}
+@keyframes animation-title {
+  0% {
+	   opacity: 0;
+	}
+  100% {
+ 	  opacity: 1; 
+	}
+}
+@keyframes hiddenprocess {
+  0%   {
+  	 opacity: 1; 
+  	}
+  100% {
+  	 opacity: 0; 
+  		}
+}
+
+.article-1 .pencil-des p {
+	font-size: 1.4rem;
+    line-height: 22px;
+}
+.article-2 {
+	color: #fff;
+	background: url(../img/art2-gray.jpg);
+	font-family: HelveticaMedium;
+	
+}
+.article-2 .article-2-in {
+	width: 96%;
+	background: url(../img/art2-bg.jpg) center -10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px 0 17.857rem;
+}
+.article-2 p {
+	font-size: 2.1rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 2.785rem;
+    margin-top: 54px;
+}
+.article-2 p .big-p {
+	font-size: 3rem;
+    font-weight: 700;
+}
+.article-2 p span:last-child {
+	font-family: HelveticaLight;
+}
+.article-2 h3 {
+    margin-top: 12px;
+}
+.article-header {
+	font-size: 1.5rem;
+    background: url(../img/line.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% bottom;    
+    padding-bottom: 10px;
+	text-align: center;
+}
+.article-3 {
+	font-family: HelveticaRegular;
+	padding: 2.857rem 0;
+}
+.article-3 h3 {
+	margin-bottom: 45px;
+}
+.article-3 img {
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: all ease 1s;
+}
+
+
+
+.article-3 h4 {
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.article-3 ul {
+	padding-left: 10px;
+}
+.article-3 ul li {
+	background: url(../img/checked.png) left 7px;
+	background-repeat: no-repeat;
+	padding-left: 22px;
+}
+.article-3 .article3-block-in {
+	margin-bottom: 50px;
+}
+.article-4 {
+	background: #f6f6f6;
+	padding: 3.21rem 0 8.571rem;
+}
+.article-4 span {
+    padding: 10px 0;
+    color: #949494;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.article-4 .progress_container {
+	position: relative;
+}
+.article-4 .active-proces,
+.article-4 .initial_bar {
+	position: absolute;
+	width: 100%;
+	top:0;
+	left:0;
+}
+.article-4 .active-proces {
+	z-index: 10;
+	width:100%;
+}
+.article-4 .progresss{
+	overflow: hidden;
+    animation: progress 5s infinite;
+}
+.article-4 .progresss .divka {
+	text-align: center;
+	display: block;
+	width: 1110px;
+	height: 100%;
+
+}
+.article-4 .initial_bar{
+	z-index: 9;
+}
+@keyframes progress {
+    0% {
+    	width:0;
+	}
+    100% {
+    	width:100%;
+    }
+}
+.article-5 {
+	font-family: HelveticaRegular;
+	padding: 30px 0 50px;
+}
+.article-5 .addr {
+	flex-wrap: wrap;
+}
+
+.article-5 .addr .right-addr {
+	max-width: 800px;
+}
+
+.article-5 .left-addr ul li{
+	margin-bottom: 25px;
+	font-weight: bold;
+    background: url(../img/contact1.jpg) 0 center no-repeat;
+    height: 40px;
+    padding: 5px 0 0 40px;
+    line-height: 17px;
+}
+.article-5 .left-addr ul li:nth-child(2){
+    background: url(../img/phone.png) 0 center no-repeat;
+}
+
+.article-5 .left-addr ul li:nth-child(3){
+    background: url(../img/mail.png) 0 center no-repeat;
+}
+.article-5 .left-addr ul li span{
+	padding-left: 70px;
+}
+.article-5 .addr {
+	width: 90%;
+}
+.article-5 h3 {
+	margin-bottom: 50px;
+}
+footer {
+	background: rgba(117,139,171,0.95);
+	color: #fff;
+	padding: 20px 0;
+}
+footer p {
+	width: 100%;
+	margin: 0;
+	font-size: .8rem;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 600px) { 
+	body, html {
+		font-size: 10px;
+	}
+	.article-3 ul li {
+    	background: url(../img/checked.png) left 0px no-repeat;
+ 	}
+@media screen and (max-width: 992px) { 
+	.article-1 .pencil-2 {
+		display: none;
+		background: #ccc;
+	}
+ }
+ @media screen and (max-width: 1200px) {
+	.active-proces {
+		display: none;
+	}
+ }

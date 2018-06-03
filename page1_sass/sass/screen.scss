@@ -1,0 +1,401 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$main_font: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+$main_color:  #333;
+$main_font_size: 14px;
+$background_color: fff; 
+$btn_color: #F0532D;
+
+body {
+	font-family: $main_font; 
+	font-size: $main_font_size;
+	background-color: $background_color;
+	font-weight: 400;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;;
+}
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+a {
+	text-decoration: none;
+	color: #7B7B84;
+	letter-spacing: .2px;
+	font-weight: 700;
+	transition: all ease .2s;
+}
+h1 {
+	font-weight: 800;
+    font-size: 80px;
+    color: #fff;
+    letter-spacing: -1.73px;
+    line-height: 80px;
+    margin: 0 0 30px;
+    text-align: center;
+}
+h2 {
+	font-size: 35px;
+	font-weight: 800;
+}
+h3 {
+	font-weight: 800;
+    font-size: 20px;
+    color: #454545;
+    line-height: 30px;
+}
+img {
+	max-width: 100%;
+}
+
+.wrapper-btn {
+	a {
+		border-radius: 4px;
+		color: #fff;
+		line-height: 42px;
+		padding: 15px 30px;		
+		text-transform: uppercase;
+		transition: background .3s ease;
+	}
+	.orange {
+		background: #F0532D;
+		&:hover {
+			background: #FC6E4B;
+    		border: 1px solid #FC6E4B;
+		}
+	}
+	.white {
+		background: #fff;
+		&:hover {
+			background: #ECECEC;
+	    	border: 1px solid #C1C1C1;
+		}
+	}
+	.black {
+		background:#000;
+		&:hover {
+			background: #4D4D4D;
+	    	border: 1px solid #4D4D4D;
+		}
+	}
+}
+
+.header {
+	position:fixed;
+	background: #fff;
+	width: 100%;
+	z-index: 100;
+	.nav {
+		justify-content: space-between;
+		align-items: center;
+		.left-nav {
+			border-right: 1px solid #DBE2E5;
+		    padding: 15px 10px;
+		    width: 	170px;
+			a {
+				display: block;
+			    background: url(../img/logo-dark.png);
+			    background-repeat: no-repeat;
+			    background-size: 150px auto;
+			    width: 150px;
+			    height: 35px;
+			    transition: opacity .2s linear;
+				&:hover {
+					opacity: .6;
+				}
+			}
+
+		}
+		.right-nav {
+			align-self: center;
+			max-width: 100%; 
+			ul {
+				margin-right: 20px;
+				li {
+					display: inline-block;
+					margin-left: 45px;
+					a {
+						font-size: 15px;
+					    color: #7B7B84;
+					    transition: border .2s ease;
+    					padding-bottom: 21px;
+					    &:hover {
+					    	border-bottom: solid 3px  #000; 
+					    }	
+					}	
+				}
+			}
+
+		}
+		.wrapper-btn {
+			align-self: center;
+			a {
+				padding: 13px 25px;
+				border-radius: 5px;
+			}
+		}
+		.fa-bars-out {
+			font-size: 25px;
+			display: none;
+		}
+	}
+	.mob-nav {
+		position: absolute;
+	    width: 100%;
+	    background: #fff;
+	    z-index: 100;
+
+	    ul {
+	    	padding-left: 30px;
+	    	margin-bottom: 20px;
+	    	li {
+	    		border-bottom: 3px solid #fff;
+
+	    		line-height: 45px;
+	    		text-transform: uppercase;
+	    		transition: border .1s ease;
+	    		&:hover {
+    				border-bottom: 3px solid #4D4D4D
+	    		}
+	    		a {
+	    			
+	    		}
+	    	}
+	    	.active {
+    			border-bottom: 3px solid #4D4D4D
+	    			
+	    	}
+	    }
+	}		
+}
+.section1{
+	background: url(../img/home-intl-1.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: top center;
+
+	.section1-in {
+		margin: 0 auto;
+		padding: 250px 0;
+		text-align: center;
+		p {
+			display: block;
+			margin: 0 0 22px;
+			font-size:24px;
+			color: #fff;
+			line-height: 32px;
+			text-align: center;
+		}
+		.wrapper-btn {
+			position: relative;
+			display: inline-block;
+			margin: 0 30px 30px 0;
+			
+			p {
+				padding: 18px 42px;
+			}
+			.white {
+				background: #ECECEC;
+				color: #656565;
+			}
+		}
+		
+	}
+}
+.section2 {
+	position:relative;
+	background-color: #F8F8F8;
+	padding: 20px 0 78px;
+}
+.section2-in {
+	position: relative;
+	padding: 30px 0 150px 0;
+	justify-content: space-around;
+	.wrapper-cta {
+		width:30%;
+		margin-left:20px;
+		position: relative;
+		box-sizing: border-box;
+		
+		.desc {
+			position: absolute;
+		    padding: 15px 0 35px 16px;
+		    text-align: left;
+		    background: #fff;
+		    width: 90%;
+		    bottom: -151px;
+    		left: 18px;
+		    box-sizing: border-box;
+			a {
+				display:block;
+				font-size: 22px;
+				line-height: 20px;
+				font-weight: 800;
+				margin-bottom: 20px;
+				min-height: 30px;
+			}
+			& a, & p {
+					color: #000;	
+				}
+			p {
+				font-size: 15px;
+				font-weight: 550;
+				letter-spacing: 0.6;
+				transition: all 1s ease;
+				line-height: 22px;
+				min-height: 80px;
+			}
+		}
+
+	}
+}
+.section3 {
+	background: url(../img/boosted-warranty-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+	text-align:center;
+}
+.section3-in {
+	padding: 70px 0 70px 0;
+	width: 60%;
+    margin: 0 auto;
+	h2 {
+		line-height: 35px;
+		margin: 0 0 20px;
+	}
+	& h2, & p {
+		color: #fff;
+	}
+	p {
+		font-size: 18px;
+    	line-height: 27px;
+    	margin-bottom: 20px;	
+		font-weight: 700;
+	}
+	.wrapper-btn {
+		a {
+			background: #000;
+		}
+	}
+}
+.section4 {
+	background: #EAEAEA;
+}
+.section4-in {
+	justify-content: space-around;
+	align-content: center;
+	width: 95%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 50px 0 50px 0;
+	text-align: center;
+	.wrapper {
+		width: 25%;
+		padding-right: 50px;	
+		border-right: 1px solid #D2D2DA;
+		margin-bottom: 50px;
+		&:last-child{
+			border: none;
+		}	
+		h3 {
+			margin-bottom: 10px;
+		}
+		p {
+			max-width: 80%;
+			color: #636363;
+    		line-height: 18px;
+    		font-weight: 500;
+    		min-height: 50px;
+    		margin: 0 auto;	
+		}
+	}
+}
+.footer-in {
+	justify-content: space-between;
+	padding: 50px 0;
+	box-sizing: border-box;
+}
+.left-footer {
+	width: 55%;
+	justify-content: space-between;
+	ul {
+		width: 30%;
+		li {
+			margin-bottom: 20px;
+    		line-height: 18px;
+			a {
+				font-weight: 500;
+				display:block;
+				color: #707070;
+			}
+			a.first-el {
+				font-weight: 750;
+			}
+		}
+	}
+}
+.right-footer {
+	width: 40%;
+	text-align:left;
+}
+.form-wrapper {
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	p {
+		color: #707070;
+		font-weight: 750;
+		margin-bottom: 20px;
+	}
+	input[type=text] {
+		display: inline-block;
+	    background-color: #F6F6F6;
+	    width: 68%;
+	    padding: 13px 0;
+	    color: #9CA2AB;
+	    font-size: 16px;
+	}
+	.wrapper-btn {
+		display: inline-block;
+		width: 30%;
+		margin-left: -4px;
+		a {
+			border-radius: 0;
+			background: #000;
+		}
+	}
+}
+.social-links {
+	flex-direction: column;
+	justify-content: space-between;
+	.img-wrapper {
+
+    	justify-content: flex-end;
+		img {
+			margin-left: 30px;
+			max-width: 32px;
+		}
+	}
+}
+.menu-footer {
+	justify-content: flex-end;
+	align-content: center;
+	margin-bottom: 100px;
+	img {
+		max-height: 20px;
+	}
+	a {
+		margin-left: 20px;
+		font-weight: 500;
+	}
+
+}

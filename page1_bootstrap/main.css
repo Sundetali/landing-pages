@@ -1,0 +1,346 @@
+body{
+	overflow-x: hidden;
+}
+#main-page{
+	background-image: url(images/mainimage.jpg);
+	background-position:  center center no-repeat !important ;
+	background-size: cover;
+	overflow-x: hidden;
+	height: 100vh;
+}
+header {
+	position: fixed;
+	width: 100vw;
+}
+header nav{
+	height: 4.5rem;
+}
+header ul .nav-item{
+	width: 9rem;
+}
+header a .nav-link{
+	font-family: reglo-bold,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #7B7B84;
+    padding: 23px 17px 21px;
+    transition: border .1s linear;
+    letter-spacing: .4px;
+    border-bottom: 2px solid #fff
+}
+header .collapse{
+	border-left: 1px solid #DBE2E5;
+}
+.btn-shop{
+	    background: #F0532D;
+    border: 1px solid #F0532D;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #FFF;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    line-height: 42px;
+    padding: 0 25px;
+    margin-top: 12px;
+}
+.btn-learn{
+	background: #FFF;
+    border: 1px solid #F5F5F5;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #656565;
+    padding: 18px 42px;
+}
+.btn-orange{
+    background: #F0532D;
+    border: 1px solid #F0532D;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+    padding: 18px 42px
+}
+.main{
+	/*position: absolute;*/
+	height: 100%;
+	width: 100%;
+}
+.main h1{
+    font-weight: 400;
+    font-size: 80px;
+    color: #fff;
+    letter-spacing: -1.73px;
+    line-height: 45px;
+    margin: 0 0 30px;
+}
+.main p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    margin: 0 0 40px;
+}
+.section-one{
+	background-color: #F8F8F8;
+	padding: 34px 0 210px;
+	/*height: 10vh;*/
+	width: 100vw;
+}
+.section-one .image-block img{
+	/*height: 15rem;*/
+	    width: 100%;
+    height: auto;
+}
+.section-one .block-content{
+	display: block;
+    background: #fff;
+    margin: 0 30px 0 14px;
+    color: #000;
+    position: absolute;
+    bottom: -120px;
+    padding: 30px 15px 0;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.02);
+    text-decoration: none;
+    height: 170px;
+}
+.section-one .block a:hover, .btn-black:hover{
+	color: #F0532D;
+	transition: all .15s linear;
+	cursor: pointer;
+}
+.section-one .block{
+    display: block;
+    position: relative;
+}
+.section-second{
+	background-image: url(images/section2.jpg);
+	background-size: cover;
+	padding: 115px 0;
+	width: 100vw;
+	color: #fff;
+}
+.section-second p{
+    font-size: 18px;
+    line-height: 27px;
+}
+.section-second .btn-black{
+    background: #000;
+    border-radius: 4px;
+    color: #fff;
+    padding: 18px 42px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.section-three{
+	padding: 58px 0;
+    background: #EAEAEA;
+}
+.section-three .center	{
+	border-right:1px solid #DBE2E5;
+	border-left:1px solid #DBE2E5; 
+}
+footer{
+	padding: 80px 0;
+}
+footer .footer-services a{
+	    color: #707070;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+footer h4{
+	font-size: 14px;
+}
+footer .form{
+	width: 100%;
+}
+footer .form input{
+    background: #F6F6F6;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    height: 54px;
+    font-size: 16px;
+    color: #717171;
+    width: 65%;
+}
+
+footer .btn-subscribe{
+	color: #fff;
+	background-color: #000;
+    font-size: 14px;
+    letter-spacing: 1.21px;
+    font-weight: 400;  
+    width: 35%;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+    border: 0!important;
+}
+footer .footer-info a{
+	color: #707070;
+    font-size: 14px;;
+}
+footer .footer-info .footer-info-main, .flag{
+	float: right;
+}
+footer .footer-info .flag{
+		margin-top:5px; 
+}
+.btn-black:hover, .btn-subscribe:hover{
+	background: #4D4D4D;
+    border: 1px solid #4D4D4D;
+}
+.btn-shop:hover, .btn-orange:hover{
+	background: #FC6E4B;
+    border: 1px solid #FC6E4B;
+}
+.btn-learn:hover{
+	    background: #ECECEC;
+    border: 1px solid #C1C1C1
+}
+@media screen and (max-width: 425px){
+	header{
+		z-index: 9999;
+	}
+	header .navbar{
+		padding: 0;
+	}
+	header .navbar-brand{
+		margin-left: .8rem;
+	}
+	header .navbar-toggler {
+		margin-right: 	.7rem;
+	}
+
+	header .navbar-toggler:hover {
+		cursor: pointer;
+	}
+	header .container{
+		width: 100%;
+		padding: 0;
+	}
+	.navbar-collapse{
+	    background: #fff;
+    }
+	#main-page{
+		background-image: url(images/mobile-background.jpg) !important;
+		background-size: contain !important;
+	}
+	.main p{
+		    font-size: 19px;
+    	line-height: 24px;
+	}
+	.main .btn-learn{
+		display: none;
+	}
+
+	.main .main-buttons{
+		margin-right: 0 !important;
+		width: 100%;
+	}
+	.main h1{
+		margin-right: 0 !important;
+	}
+	.block:nth-child(1 ){
+		margin-bottom: 150px;
+	}
+
+	.block:nth-child(2){
+		margin-bottom: 150px;
+	}
+	.section-second{
+		background: url(images/section2.jpg) right center no-repeat;
+    background-size: cover;
+	}
+
+	.shop-now p{
+		padding:.6rem; 
+		margin-bottom: 1rem;	
+	}.section-three .center{
+		border:none;
+	}
+	.section-three{
+		background-color: #fff;
+	}
+	.line{
+		background-color: #E3E3E3;
+		height: .1rem;
+		width: 6rem;
+		left: 50%;
+		margin: auto;
+	}
+	footer{
+		padding: 0 1rem 0 1rem;
+	}
+	footer .form input, .btn-subscribe{
+		width: 100% !important;
+		margin-bottom: .8rem;
+	}
+	footer .form{
+		display: flex;
+		flex-direction: column !important;
+	}
+	footer .footer-websites{
+		display: flex;
+		justify-content: center !important;
+	}
+	footer .footer-info{
+		margin-top: 1rem;
+	}
+	footer .footer-info .footer-info-main{
+		display: flex;
+		flex-direction: column !important;
+		float: none;
+	}
+	footer .footer-info a{
+		margin-top: .5rem;
+	}	
+	footer .footer-info .flag{
+		float: none;
+	}
+}	
+
+
+	@media screen and (max-width: 768px ){
+		#main-page{
+			background-size: cover;
+		}
+		#main-page .container{
+			margin: 0;
+		}
+		#main-page .navbar{
+			width: 100vw;
+		}
+		.main .main-buttons{
+			margin-right: 25rem;
+		}
+		.main h1{
+			margin-right: 14rem;
+		}
+		.navbar-collapse{
+		    background: #fff;
+		}
+		header{
+				z-index: 9999;
+		}
+		header .navbar{
+			padding: 0;
+		}
+		header .navbar-brand{
+			margin-left: .8rem;
+		}
+		header .navbar-toggler {
+			margin-right: 	.7rem;
+		}
+
+		header .navbar-toggler:hover {
+			cursor: pointer;
+		}
+		header .navbar-collapse {
+			padding: 0;
+		}
+		header .container{
+			width: 100%;
+			padding: 0;
+		}
+	}
+	
